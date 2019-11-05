@@ -1,0 +1,130 @@
+body {
+	margin: 0px;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #67b26f;
+	background: -webkit-linear-gradient(to right, #67b26f, #4ca2cd); 
+	background: linear-gradient(to right, #67b26f, #4ca2cd); 
+}
+
+.app {
+	line-height: 30px;
+	font-family: 'Roboto', sans-serif;
+	display: inline-block;
+	padding: 30px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	background: white;
+	box-shadow: 0px 5px 25px rgba(0,0,0,0.5);
+	position: relative;
+}
+.app:before {
+	content: 'Deluxe-Weather';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	line-height: 40px;
+	padding-top: 2px;
+	text-transform: uppercase;
+	background: rgba(89, 171, 165, 0.26);
+	font-weight: 900;
+	font-size: 16px;
+	color: #2b7396;
+	letter-spacing: 1px;
+}
+.temperature:after {
+	content: 'C°';
+}
+.temperature:before {
+	content: 'Außentemperatur';
+}
+
+.barometer:after {
+	content: 'mb';
+}
+.barometer:before {
+	content: 'Luftdruck';
+}
+
+.solarradiation:after {
+	content: 'w/m²';
+}
+.solarradiation:before {
+	content: 'Sonnenergie';
+}
+
+.raindaily:after,
+.rainevent:after,
+.raintotal:after {
+	content: 'cm';
+}
+.raindaily:before {
+	content: 'Regen täglich';
+}
+.rainevent:before {
+	content: 'Regen Event';
+}
+.raintotal:before {
+	content: 'Regen Total';
+}
+
+.winddirection:after {
+	content: '°';
+}
+.winddirection:before {
+	content: 'Windrichtung';
+}
+
+.windgust:after,
+.windspeed:after {
+	content: 'km/h';
+}
+.windgust:before {
+	content: 'Windstoß';
+}
+.windspeed:before {
+	content: 'Windgeschwindigkeit';
+}
+
+.app *:before {
+	width: 120px;
+	display: inline-block;
+	padding-left: 5px;
+	text-align: right;
+	padding-right: 10px;
+	font-size: 12px;
+}
+.app *:after {
+	display: inline-block;
+	padding-left: 5px;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
